@@ -5,27 +5,24 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: hcremers <hcremers@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/15 13:28:06 by hcremers          #+#    #+#             */
-/*   Updated: 2022/09/13 16:07:53 by hcremers         ###   ########.fr       */
+/*   Created: 2022/08/19 14:20:16 by hcremers          #+#    #+#             */
+/*   Updated: 2022/09/13 18:03:07 by hcremers         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "Harl.hpp"
 
-Zombie*	newZombie(std::string name);
-void	randomChump(std::string name);
-
-int	main(void)
+int main(int argc, char** argv)
 {
-	Zombie*	foo = new Zombie("Foo");
-	foo->announce();
-	delete foo;
+	if (argc != 2)
+	{
+		std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
+		return (1);
+	}
 
-	Zombie*	bar = newZombie("Bar");
-	bar->announce();
-	delete bar;
+	Harl harl;
 
-	randomChump("Huf");
+	harl.complain(argv[1]);
 
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: hcremers <hcremers@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/18 11:38:45 by hcremers          #+#    #+#             */
-/*   Updated: 2022/08/18 15:32:04 by hcremers         ###   ########.fr       */
+/*   Updated: 2022/09/13 16:55:08 by hcremers         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,17 +18,18 @@
 class HumanB
 {
 	private:
-		Weapon*		_weapon;
 		std::string _name;
+		Weapon*		_weapon;
 
 	public:
 		HumanB(std::string name);
 		~HumanB();
 
-		void		attack(void);
+		void		attack();
 
-		std::string	getName(void);
-		Weapon*		getWeapon(void);
+		std::string	getName();
+		Weapon*		getWeapon();
+
 		void		setName(std::string name);
 		void		setWeapon(Weapon& weapon);
 };

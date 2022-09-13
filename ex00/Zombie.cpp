@@ -6,7 +6,7 @@
 /*   By: hcremers <hcremers@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/15 13:32:21 by hcremers          #+#    #+#             */
-/*   Updated: 2022/08/23 12:09:49 by hcremers         ###   ########.fr       */
+/*   Updated: 2022/09/13 16:08:39 by hcremers         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ Zombie::Zombie(std::string in) : _name(in)
 
 Zombie::~Zombie(void)
 {
-	std::cout << this->_name << std::endl;
+	std::cout << this->_name << " has been destroyed" << std::endl;
 	return;
 }
 

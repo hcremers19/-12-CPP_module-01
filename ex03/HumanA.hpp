@@ -6,7 +6,7 @@
 /*   By: hcremers <hcremers@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 17:00:36 by hcremers          #+#    #+#             */
-/*   Updated: 2022/08/18 15:33:29 by hcremers         ###   ########.fr       */
+/*   Updated: 2022/09/13 16:55:03 by hcremers         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,16 +22,16 @@ class HumanA
 		Weapon&		_weapon;
 
 	public:
-		HumanA(std::string name, Weapon &weapon);
+		HumanA(std::string name, Weapon& weapon);
 		~HumanA();
 
-	void		attack(void);
-		
-	std::string	getName(void);
-	Weapon&		getWeapon(void);
+		void		attack();
+			
+		std::string	getName();
+		Weapon&		getWeapon();
 
-	void		setName(std::string name);
-	void		setWeapon(Weapon weapon);
+		void		setName(std::string name);
+		void		setWeapon(Weapon weapon);
 };
 
 #endif
